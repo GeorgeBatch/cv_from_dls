@@ -1,0 +1,27 @@
+# exclude all Mac OS graphics
+*/.DS_Store
+.DS_Store
+
+# exclude all pucache files and ipynb checkpoints
+*/__pycache__
+*.pyc
+*.swp
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# exclude all repository-level heavy files except for the README.md files
+data/*
+!data/README.md
+weights/*
+!weights/README.md
+
+# exclude all lower-level heavy files except for the README.md files
+*/data/*
+!*/data/README.md
+*/weights/*
+!*/weights/README.md
+
+# exclude all metadata from R-projects
+*/.R*
+.R*
+.Rproj.user
